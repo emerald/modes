@@ -5,10 +5,9 @@ set -euo pipefail
 echo "This file was generated automatically:" | \
   comments.sh
 
+git-identity.sh . | \
+  indented-comments.sh
+
 date -u --iso-8601=minutes | \
   prefix.sh "Generation date-time (ISO 8601): " | \
-  comments.sh
-
-git-identity.sh . | \
-  indented.sh | \
-  comments.sh
+  indented-comments.sh
