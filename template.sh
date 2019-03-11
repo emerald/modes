@@ -2,15 +2,16 @@
 
 set -euo pipefail
 
-printf "This file was generated automatically using make:\n\n" | \
-  comments.sh
+header() {
+  printf "This file was generated automatically using make:\n\n"
+  git-identity.sh . | indented.sh
+  printf "\n"
+  date -u --iso-8601=minutes | \
+    prefix.sh "Generation date-time (ISO 8601): " | \
+    indented.sh
+}
 
-git-identity.sh . | \
-  indented-comments.sh
-
-date -u --iso-8601=minutes | \
-  prefix.sh "Generation date-time (ISO 8601): " | \
-  indented-comments.sh
+header | comments.sh
 
 printf "\n"
 
