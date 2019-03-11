@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-echo "This file was generated automatically:" | \
+echo "This file was generated automatically using make:" | \
   comments.sh
 
 git-identity.sh . | \
