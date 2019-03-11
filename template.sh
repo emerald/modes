@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-echo "This file was generated semi-automatically." | \
+echo "This file was generated automatically:" | \
   comments.sh
 
 date -u --iso-8601=minutes | \
