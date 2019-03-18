@@ -1,8 +1,7 @@
 # Emerald Modes
 
-Currently, an "Emerald mode" consists merely of syntax-highlighting for Emerald
-
-Currently, the supported modes are:
+Presently, an "Emerald mode" consists merely of syntax-highlighting
+for Emerald. There are currently modes for:
 
   * [vim](envs/vim/) ([install](envs/vim#installing))
   * [The `listings` package for LaTeX](envs/listings)
