@@ -4,7 +4,7 @@
 including source code listings into your LaTeX document.
 
 The Emerald language definition is given in a single `.tex` file:
-[`listings-emerald.tex`](https://github.com/emerald/modes/releases/download/v2019.0.2/listings-emerald.tex).
+[`listings-emerald.tex`](https://github.com/emerald/modes/releases/download/v2019.0.3/listings-emerald.tex).
 
 In general, the file has the following structure:
 ```
@@ -67,5 +67,5 @@ on CTAN](https://www.ctan.org/pkg/listings).
 
 ### Manual
 
-  1. Download the [latest release of `listings-emerald.tex`](https://github.com/emerald/modes/releases/download/v2019.0.2/listings-emerald.tex),
+  1. Download the [latest release of `listings-emerald.tex`](https://github.com/emerald/modes/releases/download/v2019.0.3/listings-emerald.tex),
      and place it in your working LaTeX directory.
