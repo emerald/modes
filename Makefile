@@ -11,17 +11,17 @@ path_base := $(common_path):$(scripts_path):$(PATH)
 
 all: vim listings
 
-listings: listings-defs templated
-
-listings-defs:
-	$(eval path_name := listings)
-	$(eval target := listings-emerald.tex)
-
 vim: vim-defs templated
 
 vim-defs:
 	$(eval path_name := vim)
 	$(eval target := emerald.vim)
+
+listings: listings-defs templated
+
+listings-defs:
+	$(eval path_name := listings)
+	$(eval target := listings-emerald.tex)
 
 textmate: textmate-defs templated
 
