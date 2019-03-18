@@ -11,6 +11,17 @@ path_base := $(common_path):$(scripts_path):$(PATH)
 
 all: vim listings
 
+templated: \
+		template.sh
+	mkdir -p build
+	$(current_dir)scripts/git-ready-to-deploy.sh
+	EMERALD_PATH="$(EMERALD_PATH)" \
+	  PATH="$(current_dir)envs/$(path_name)/:$(path_base)" \
+		bash $< > build/$(target)
+
+clean:
+	rm -rf build
+
 vim: vim-defs templated
 
 vim-defs:
@@ -28,17 +39,6 @@ textmate: textmate-defs templated
 textmate-defs:
 	$(eval path_name := textmate)
 	$(eval target := emerald.cson)
-
-templated: \
-		template.sh
-	mkdir -p build
-	$(current_dir)scripts/git-ready-to-deploy.sh
-	EMERALD_PATH="$(EMERALD_PATH)" \
-	  PATH="$(current_dir)envs/$(path_name)/:$(path_base)" \
-		bash $< > build/$(target)
-
-clean:
-	rm -rf build
 
 .PHONY: all templated clean \
 	listings listings-defs \
