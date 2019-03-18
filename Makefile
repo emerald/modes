@@ -34,13 +34,13 @@ listings-defs:
 	$(eval path_name := listings)
 	$(eval target := listings-emerald.tex)
 
-textmate: textmate-defs templated
+atom-grammar: atom-grammar-defs templated
 
-textmate-defs:
-	$(eval path_name := textmate)
+atom-grammar-defs:
+	$(eval path_name := atom-grammar)
 	$(eval target := emerald.cson)
 
 .PHONY: all templated clean \
 	listings listings-defs \
 	vim vim-defs \
-	textmate textmate-defs
+	atom-grammar atom-grammar-defs
