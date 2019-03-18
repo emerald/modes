@@ -9,8 +9,6 @@ scripts_path := $(current_dir)scripts/
 common_path := $(current_dir)envs/common/
 path_base := $(common_path):$(scripts_path):$(PATH)
 
-# ./git-ready-to-deploy.sh
-
 all: vim listings
 
 listings: listings-defs templated
