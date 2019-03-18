@@ -2,6 +2,10 @@
 
 set -euo pipefail
 
+cat LICENSE | comments.sh
+
+printf "\n"
+
 header() {
   printf "This file was generated automatically using make:\n\n"
   git-identity.sh . | indented.sh
@@ -14,11 +18,6 @@ header() {
 header | comments.sh
 
 printf "\n"
-
-cat LICENSE | comments.sh
-
-printf "\n"
-
 
 keywords_and_types() {
   printf "Keywords and built-in types, as found in:\n\n"
