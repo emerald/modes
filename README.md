@@ -4,7 +4,7 @@ There is currently syntax-highlighting for Emerald in the following
 environments:
 
   * [vim](envs/vim/) ([install](envs/vim#installing))
-  * [The `listings` package for LaTeX](envs/listings)
+  * [`listings` package for LaTeX](envs/listings)
     ([install](envs/listings#installing))
 
 ## Design and Implementation
