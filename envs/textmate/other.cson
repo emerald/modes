@@ -1,0 +1,16 @@
+{
+  begin: '"'
+  patterns: [ { match: '\\\\"' } ]
+  end: '"'
+  name: 'string.quoted'
+}
+{
+  begin: '\''
+  patterns: [ { match: '\\\'' } ]
+  end: '\''
+  name: 'constant.character'
+}
+{
+  match: '%.*$'
+  name: 'comment'
+}

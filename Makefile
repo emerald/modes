@@ -23,6 +23,12 @@ vim-defs:
 	$(eval path_name := vim)
 	$(eval target := emerald.vim)
 
+textmate: textmate-defs templated
+
+textmate-defs:
+	$(eval path_name := textmate)
+	$(eval target := emerald.cson)
+
 templated: \
 		template.sh
 	mkdir -p build
@@ -36,4 +42,5 @@ clean:
 
 .PHONY: all templated clean \
 	listings listings-defs \
-	vim vim-defs
+	vim vim-defs \
+	textmate textmate-defs
