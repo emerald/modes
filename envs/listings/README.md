@@ -55,6 +55,11 @@ To include code from a file (probably the best option), use:
 \lstinputlisting[language=emerald]{filepath.m}
 ```
 
+To include only lines 2-4, use:
+```
+\lstinputlisting[language=emerald, linerange=2-4]{filepath.m}
+```
+
 For more about the `listings` package, see [the package documentation
 on CTAN](https://www.ctan.org/pkg/listings).
 
