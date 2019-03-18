@@ -28,6 +28,7 @@ vim-defs:
 templated: \
 		template.sh
 	mkdir -p build
+	$(current_dir)scripts/git-ready-to-deploy.sh
 	EMERALD_PATH="$(EMERALD_PATH)" \
 	  PATH="$(current_dir)envs/$(path_name)/:$(path_base)" \
 		bash $< > build/$(target)
