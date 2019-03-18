@@ -2,4 +2,4 @@
 
 set -euo pipefail
 
-sed "s/^/  /"
+sed 's/^\(.\+\)$/  \1/'
