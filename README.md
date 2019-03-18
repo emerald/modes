@@ -1,4 +1,4 @@
-# Emerald Mode Generator
+# Emerald Modes
 
 Currently, an "Emerald mode" consists merely of syntax-highlighting for Emerald
 
