@@ -9,7 +9,7 @@ moreemph={
 EOF
 
 printf "Generated using ${script}\n" | \
-  comments.sh | indented.sh
+  comments-indented.sh
 
 cat - | \
   sed -e "s/$/,/g" | \
