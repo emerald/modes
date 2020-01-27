@@ -7,7 +7,7 @@ cat LICENSE | comments.sh
 printf "\n"
 
 header() {
-  printf "This file was generated automatically using make:\n\n"
+  printf "This file was generated automatically:\n\n"
   git-identity.sh . | indented.sh
   printf "\n"
   date -u --iso-8601=minutes | \
